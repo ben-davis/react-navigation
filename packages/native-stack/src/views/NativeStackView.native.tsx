@@ -160,6 +160,7 @@ const SceneView = ({
     statusBarTranslucent,
     statusBarColor,
     freezeOnBlur,
+    sheetAllowedDetents,
   } = options;
 
   let {
@@ -267,6 +268,7 @@ const SceneView = ({
       navigationBarHidden={navigationBarHidden}
       replaceAnimation={animationTypeForReplace}
       stackPresentation={presentation === 'card' ? 'push' : presentation}
+      sheetAllowedDetents={sheetAllowedDetents}
       stackAnimation={animation}
       screenOrientation={orientation}
       statusBarAnimation={statusBarAnimation}
